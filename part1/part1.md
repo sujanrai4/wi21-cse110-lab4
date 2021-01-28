@@ -11,9 +11,15 @@
     using var ignores the for loop so it can be accessed after the for loop at the bootom of the function and its value is set 
     by from the last iteration in the for loop.
 4. The function will return an array `[50, 100, 150]` because the `push()` method pushes discounted prices at the end of the 
-   array
+    array inside the for loop. So the variable `discounted` has global scope within the function
    
   ***
-5. It will be an error because the variable declared using the `let` has a block level scope so `i` has scope only inside the for loop.
-6. It will be an error because the variable declared using the `let` has a block level scope so `discountedPrice` has scope only inside the for loop.
-7. It will have value for `finalPrice` of **0** since the `finalPrice` declared using `let` will be the same after exiting the for loop.
+5. There will be a `referenceError: i is not defined` because the variable declared using the `let` has a block level scope so 
+    `i` has scope only inside the for loop and can not be used after the for loop within the function.
+6. There will be a `referenceError: discountedPrice is not defined` because the variable declared using the `let` has a block 
+    level scope so `discountedPrice` has scope only inside the for loop and can not be used after the gor loop within the function.
+7. It will print the value of `finalPrice = 150` since the `finalPrice` declared using `let` outside of the for loop which is updated 
+    inside the for loop and has the value of 150 after the last iteration. So finalPrice has global scope within the function.
+8. The function will return the array of `[50, 100, 150]` since the `discounted` declared using `let` outside of the for loop which 
+    is updated inside the for loop using push() method has the value of `[50, 100, 150]` after the last iteration. So discounted 
+    discounted variable has global scope within the function.
