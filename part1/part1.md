@@ -45,21 +45,21 @@
     * E `student['courseLoad'][0]`
     
 ***
-14. * A ` '32' `=> because of `'3'` concatenation takes precedence over `+`and conversion of `2` into `'2'` and the                         concatenation of `'3' + '2' ` takes place.
-    * B `1`     => `'3'` converted into number 3 because of the `-` operator has higher precedence than concatenation.
+14. * A ` '32' `=> because of `'3'` concatenation takes precedence over `+` and conversion of `2` into `'2'` and the                         concatenation of `'3' + '2' ` takes place.
+    * B `1`     => because of the `-` operator has higher precedence than concatenation, conversion of `'3'` into `3`                      takes place and the substraction takes place on `3 -2`.
     * C ` 3`    => because of the operand number `3` `+` takes precedence and the conversion of null into `0` takes                         place
     * D `'3null' =>`because of the `'3'` concatenation takes precedence over `+` so conversion of `null` into string                        `'null'` takes place and concatenantion operation take place.
     * E `4`     => Boolean true has numerical value of `1` and `+` operator has higher precedence
     * F `0`     => Boolean false has numerical value of `0` and `+` operator has higher precedence
-    * G ` '3undefined' => 
-    * H `NaN`
+    * G `'3undefined'`=> because concatenation has higher precedence over `+` , undefined is converted to string                                  `undefined` and the concatenation of `'3' + 'undefined` takes place.
+    * H `NaN` => because `-` operator has higher precedence over concatecation, `"3"` is converted into number `3` and                    undefined has NaN numerical value. so `3 - NaN` is also `NaN`.
 ***
-15. * A `true`
-    * B `false`
-    * C `true`
-    * D `false`
-    * E `false`
-    * F `true`
+15. * A `true`  => when operands are of different types, javascript convert operands into numbers so `'2'` is converted                    to number `2` first and compare it with 1 which is true.
+    * B `false` => because both operands are strings, so the dictionary comparision takes place, first letter                              comparision between `'2'` and `'1'` takes place. since `'2' < '1' ` is false. so  the result is                          false.
+    * C `true`  => because regular equality check converts both operands into same data type and since both operands are                   the same after, it returns true.
+    * D `false` => because the strict equality check does not convert operands rather compares their types first and                        since one is string and the other one is number, it returns false as their data types are different.
+    * E `false` => because regular equality check converts the operands first and Boolean true has numerical value of                      `1` which is not equal to `2`.
+    * F `true` => because Boolean(2) has boolean value of `true` and since both operands have the same data type and                       same value, the strict equality check returns true.
 ***
 16. `==` equality converts the operands before the comparision is made, also called a regular equality check whereas         `===` known as strict equality check compares operands without converting them and hence if the two operands of         the different types this will return boolean value false.
 ***
