@@ -39,4 +39,9 @@
     
 ***
 13. * A `student.name`
-    * B  
+    * B `student['grad year']`
+    * C `student.greeting()`
+    * D `student['favourite name'].name`
+    * E `student['courseLoad'][0]`
+    
+***
