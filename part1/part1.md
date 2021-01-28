@@ -45,3 +45,5 @@
     * E `student['courseLoad'][0]`
     
 ***
+14. * A ` '32' `
+    * B '
