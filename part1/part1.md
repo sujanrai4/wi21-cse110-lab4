@@ -45,13 +45,13 @@
     * E `student['courseLoad'][0]`
     
 ***
-14. * A ` '32' `
-    * B `1`
-    * C ` 3`
-    * D `'3null' `
-    * E `4`
-    * F `0`
-    * G ` '3undefined' `
+14. * A ` '32' `=> concatenation of string `3` and a number `2` because concatenation has higher precedence than `+`.
+    * B `1`     => `'3'` converted into number 3 because of the `-` operator has higher precedence than concatenation.
+    * C ` 3`    => 
+    * D `'3null' =>`
+    * E `4`     => Boolean true has numerical value of `1` and `+` operator has higher precedence
+    * F `0`     => Boolean false has numerical value of `0` and `+` operator has higher precedence
+    * G ` '3undefined' =>`
     * H `NaN`
 ***
 15. * A `true`
@@ -61,5 +61,6 @@
     * E `false`
     * F `true`
 ***
-
+16. `==` equality converts the operands before the comparision is made, also called a regular equality check whereas         `===` known as strict equality check compares operands without converting them and hence if the two operands of         the different types this will return boolean value false.
+***
     
