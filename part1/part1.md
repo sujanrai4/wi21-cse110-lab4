@@ -37,6 +37,6 @@
     is updated inside the for loop using push() method has the value of `[50, 100, 150]` after the last iteration. So discounted 
     variable has global scope within the function and array variable declared using const have elements pushed into it using push() method.
     
-    ***
-    13. A. `student.name`
-        B. 
+***
+13. * A `student.name`
+    * B  
