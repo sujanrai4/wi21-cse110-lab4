@@ -36,3 +36,7 @@
 12. The function will return the array of `[50, 100, 150]` since the `discounted` declared using `const` outside of the for loop which 
     is updated inside the for loop using push() method has the value of `[50, 100, 150]` after the last iteration. So discounted 
     variable has global scope within the function and array variable declared using const have elements pushed into it using push() method.
+    
+    ***
+    13. A. `student.name`
+        B. 
