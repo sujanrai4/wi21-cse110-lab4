@@ -63,5 +63,8 @@
 ***
 16. `==` equality converts the operands before the comparision is made, also called a regular equality check whereas         `===` known as strict equality check compares operands without converting them and hence if the two operands of         the different types this will return boolean value false.
 ***
-17. It prints out `How are you?` because the first if condition converts true to numerical number 1 and `==` compares 2 with 1 which is false hence moves to `else if` condition which converts any non-zero numbers to true, so since it       has value `2` whhich is converted to Boolean `true` and the statement inside this `else if` gets executed and skips     the remaining `else` condition.
+17. It prints out `How are you?` because the first if condition converts true to numerical number 1 and `==` compares 2 with 1 which is false hence moves to `else if` condition which converts any non-zero numbers to true, so since it has value `2` whhich is converted to Boolean `true` and the statement inside this `else if` gets executed and skips     the remaining `else` condition.
+***
+18. [part1-question18.js](part1-question18.js)
+***
     
