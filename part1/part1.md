@@ -54,5 +54,12 @@
     * G ` '3undefined' `
     * H `NaN`
 ***
-15. 
+15. * A `true`
+    * B `false`
+    * C `true`
+    * D `false`
+    * E `false`
+    * F `true`
+***
+
     
