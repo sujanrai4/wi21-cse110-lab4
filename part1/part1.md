@@ -45,13 +45,13 @@
     * E `student['courseLoad'][0]`
     
 ***
-14. * A ` '32' `=> concatenation of string `3` and a number `2` because concatenation has higher precedence than `+`.
+14. * A ` '32' `=> because of `'3'` concatenation takes precedence over `+`and conversion of `2` into `'2'` and the                         concatenation of `'3' + '2' ` takes place.
     * B `1`     => `'3'` converted into number 3 because of the `-` operator has higher precedence than concatenation.
-    * C ` 3`    => 
-    * D `'3null' =>`
+    * C ` 3`    => because of the operand number `3` `+` takes precedence and the conversion of null into `0` takes                         place
+    * D `'3null' =>`because of the `'3'` concatenation takes precedence over `+` so conversion of `null` into string                        `'null'` takes place and concatenantion operation take place.
     * E `4`     => Boolean true has numerical value of `1` and `+` operator has higher precedence
     * F `0`     => Boolean false has numerical value of `0` and `+` operator has higher precedence
-    * G ` '3undefined' =>`
+    * G ` '3undefined' => 
     * H `NaN`
 ***
 15. * A `true`
