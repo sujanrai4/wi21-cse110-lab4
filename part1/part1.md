@@ -65,11 +65,11 @@
 ***
 17. It prints out `How are you?` because the first if condition converts true to numerical number 1 and `==` compares 2 with 1 which is false hence moves to `else if` condition which converts any non-zero numbers to true, so since it has value `2` whhich is converted to Boolean `true` and the statement inside this `else if` gets executed and skips     the remaining `else` condition.
 ***
-18. ![Image](part1/part1-question18.js)
+18. ![Image](/part1/part1-question18.js)
 ***
 19. It will return array `[6, 8, 10]` because the `modifyArray([1, 2, 3], doSomething])` calls callback function `doSomething(num, callback)` inside the for loop. for every i = 0, 1, 2 => array[0] = 1, array[1] = 2 and array[2] = 3. So doSomething(1, function(x)) which itself calls yet another callback function called callback which does add 2 to num = array[0] = 1 => 1 + 2 = 3. And we get function(3) = 3* 2 => 6 after the doSomething finishes execution at the end of the first iteration which is pushed to the end of the array newArr. This process runs for i = 0, 1, 2 times changing the newArr = [6, 8, 10] which is returned by the function at the end.
 ***
-20. ![Image](part1/part1-question20.js)
+20. ![Image](/part1/part1-question20.js)
 ***
 21. The result will be: 
 ```
