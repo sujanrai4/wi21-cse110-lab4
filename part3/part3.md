@@ -4,9 +4,11 @@
 ![Image](watchExpressionList.jpg)
 ***
 1. What was the bug?
-* The id `num1` and `num2` were not given the specific type so the default type of `text`was used.
+* It was concatenation operation instead of summation operation happened because the JavaScript did not convert strings 
+  sent by html file into number.
 2. How would you fix it? Include the screenshot of your fix.
-* 
+* By converting those strings values of `num1 and num2` into number using `Number()` function.
+* Screenshot of my fixed code: ![Image](bugFixedCode.jpg)
 
 ***
 1. What is the name of the new json file?
