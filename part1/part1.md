@@ -72,9 +72,11 @@
 20. [part1-question20.js](part1-question20.js)
 ***
 21. The result will be: 
-       1. 1
-       2. 4
-       3. 3
-       4. 4 
+```
+    1
+    4
+    3
+    2
+```
       
 ***
